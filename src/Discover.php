@@ -87,7 +87,7 @@ final class Discover implements DiscoverContract
 
     public static function cache(bool $singleton = false): ?object
     {
-        $implementationsPackage = '\PsrDiscovery\Implementations\Psr6\Cache';
+        $implementationsPackage = '\PsrDiscovery\Implementations\Psr6\Caches';
 
         if (! class_exists($implementationsPackage)) {
             throw new SupportPackageNotFoundException('PSR-6 Cache', 'psr-discovery/cache-implementations');
