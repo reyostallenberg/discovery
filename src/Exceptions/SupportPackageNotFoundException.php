@@ -6,6 +6,8 @@ namespace PsrDiscovery\Exceptions;
 
 use Exception;
 
+use function sprintf;
+
 final class SupportPackageNotFoundException extends Exception
 {
     /**
